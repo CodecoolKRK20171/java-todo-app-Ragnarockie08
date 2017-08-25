@@ -23,7 +23,7 @@ public class TodoItem{
     }
 
     public String itemString(){
-        
+
         String item = "[" + mark + "] " + name;
 
         return item;

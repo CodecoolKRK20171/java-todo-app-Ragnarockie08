@@ -43,6 +43,7 @@ public class App{
             }
         }
     }
+    
     public static void additem(){
         System.out.println("Enter item title: ");
         scanner = new Scanner(System.in);
@@ -50,6 +51,7 @@ public class App{
         TodoItem item = new TodoItem(name);
         list.addItem(item);
     }
+
     public static void markItem(){
         list.printList();
         System.out.println("Enter item to mark/unmark: ");
