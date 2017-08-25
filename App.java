@@ -25,7 +25,8 @@ public class App{
             System.out.println("Welcome in Todo List app\n"
                                 + "(1) to add item\n"
                                 + "(2) to mark item\n"
-                                + "(3) printlist\n"
+                                + "(3) to archive items\n"
+                                + "(4) printlist\n"
                                 + "(0) to exit");
 
             scanner = new Scanner(System.in);
@@ -36,6 +37,8 @@ public class App{
             }else if(option.equals("2")){
                 markItem();
             }else if(option.equals("3")){
+                list.archiveItems();
+            }else if(option.equals("4")){
                 list.printList();
             }
             else {
@@ -43,7 +46,7 @@ public class App{
             }
         }
     }
-    
+
     public static void additem(){
         System.out.println("Enter item title: ");
         scanner = new Scanner(System.in);

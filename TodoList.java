@@ -18,12 +18,19 @@ public class TodoList{
             System.out.println("Wrong data");
         }
     }
+    public void archiveItems(){
+        for (int i = 0; i < todoItems.size(); i++){
+            if (todoItems.get(i).mark.equals("X")){
+                todoItems.remove(todoItems.get(i));
+            }
+        }
+    }
 
     public void printList( ){
 
         String list = "";
         for (int i = 0; i < todoItems.size(); i++){
-            list += (i + 1) + ". " + todoItems.get(i).itemString() + "\n";
+            list += (i + 1) + "." + todoItems.get(i).itemString() + "\n";
         }
         System.out.println(list);
     }
